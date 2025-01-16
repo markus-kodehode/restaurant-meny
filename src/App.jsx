@@ -1,6 +1,6 @@
-import "./App.css";
-import MenuCard from "./MenuCard";
-import MenuTitle from "./MenuTitle";
+import MenyCard from "./MenyCard";
+import MenyTitle from "./MenyTitle";
+import styles from "./App.module.css";
 
 function App() {
   const meny = [
@@ -78,11 +78,11 @@ function App() {
 
   return (
     <>
-      <MenuTitle />
-      <div className="menu-grid">
-        {meny.map((dish) => {
-          return <MenuCard key={dish.id} data={dish} />;
-        })}
+      <MenyTitle />
+      <div className={styles.menygrid}>
+        {meny.map((dish) => (
+          <MenyCard key={dish.id} data={dish} />
+        ))}
       </div>
     </>
   );

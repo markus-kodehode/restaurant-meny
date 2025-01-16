@@ -10,5 +10,5 @@ const Title = styled.h1`
 `;
 
 export default function MenyTitle() {
-  return <Title>MENU</Title>;
+  return <Title>MENY</Title>;
 }
